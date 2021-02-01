@@ -19,7 +19,7 @@ const GameInfo = (props) => {
                     :
                     <div className="status winner-tease">Who's gonna win this game?</div>
             }
-                <div className="status">{props.isPlayerOneNext ? "Player One is next, with X" : "Player Two is next, with O"}</div>
+                <div className="status">{!props.isGameOver ? props.isPlayerOneNext ? "Player One is next, with X" : "Player Two is next, with O" : "Over. Refresh to play again!"}</div>
             </div>
         </div>
     );
