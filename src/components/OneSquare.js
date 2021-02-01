@@ -9,7 +9,6 @@ const OneSquare = (props) => {
         </p>
       </button>
     </div>
-
   );
 }
 
