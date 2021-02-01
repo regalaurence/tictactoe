@@ -1,38 +1,117 @@
-.App {
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+}
+
+.title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.game {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.game-board {
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 75%;
+  margin: 10px;
+  width: 75%;  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.rows-container {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.board-row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  width: 100%;
+
+}
+.square {
+  margin: 1px;
+  flex-grow: 1;
+}
+
+.square-btn {
+  position: relative;
+  background: rgb(204, 203, 203);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border: none
+}
+.square-btn-text {
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.square-btn:hover {
+  background-color: rgb(245, 241, 241)
+}
+
+.status {
+  padding: 5px;
+  text-align: center
+}
+
+.play-btn {
+  font-size: 2vw;
+  margin: 10px;
+  background-color : rgb(204, 203, 203);
+  border : none;
+  border-radius: 5px;
+  padding : 7px;
+}
+
+hr {
+  color : black;
+  width : 600px
+}
+
+.winner-tease {
+  font-size: 3vw;
+  padding: 10px;
+  margin: 3px;
+  width: 100%;
+  text-align: center;
+}
+
+.winner {
+  font-size: 3vw;
+  padding: 10px;
+  margin: 3px;
+  width: 100%;
+}
+
+
+
+@media screen and (min-width: 600px) {
+  
+  .game {
+    display : flex;
   }
 }
+
+
+
