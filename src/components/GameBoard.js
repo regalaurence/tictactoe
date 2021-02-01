@@ -152,9 +152,9 @@ class GameBoard extends React.Component {
                         isGameOver={this.state.isGameOver}
                     />
                     <div className="btns-container">
-                        <button className="play-btn" onClick={this.newGameHandler}>Refresh the board</button>
-                        <button className="play-btn" onClick={this.incrementSize}>Play with more squares</button>
-                        <button className="play-btn" onClick={this.decrementSize}>Play with less squares</button>
+                        <button className="play-btn" onClick={this.newGameHandler}>Refresh the board please!</button>
+                        <button className="play-btn" onClick={this.incrementSize}>More squares please!</button>
+                        <button className="play-btn" onClick={this.decrementSize}>Less squares please!</button>
                     </div>
                 </div>
                 <div className="game-board">
