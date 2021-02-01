@@ -131,14 +131,14 @@ class Board extends React.Component {
     }
     else alert(`That's small enough!`)
     }
+    
 
     render() {
-
         this.checkWinner()
-
+        
         return (
             <>
-                <div className="game-info">
+                {/* <div className="game-info">
                     <div>{this.state.isGameWon ?
                         <div className="status winner">Player {this.state.isPlayerTwoNext ? "one" : "two"} won !</div>
                         :
@@ -147,7 +147,7 @@ class Board extends React.Component {
                         <div className="status">{this.state.isPlayerOneNext ? "Player One is next, with X" : "Player Two is next, with O"}</div>
                     </div>
                     <div>{this.state.isTie && <div>It's a tie! </div>}</div>
-                </div>
+                </div> */}
                 <div>
                 <button className="play-btn" onClick={this.newGameHandler}>Refresh the board</button>
                 <button className="play-btn" onClick={this.incrementSize}>Play with more squares</button>
