@@ -101,7 +101,7 @@ class GameBoard extends React.Component {
     }
 
     incrementSize = () => {
-        if (this.state.squareSize < 6) {
+        if (this.state.squareSize < 5) {
             const squareSize = this.state.squareSize + 1;
             this.setState({
                 squareSize,
